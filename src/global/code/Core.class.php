@@ -283,7 +283,8 @@ class Core
 	 * database (I figure that's a bit more flexible putting it there than hardcoded in config file).
 	 */
 	private static $defaultTheme = "default";
-	private static $defaultLang = "en_us";
+	//private static $defaultLang = "en_us";
+	private static $defaultLang = "pt_br";
 
 	/**
 	 * This determines the value used in the database to separate multiple field values (checkboxes and
