@@ -14,7 +14,8 @@ $LANG = Core::$L;
 $module_info = Modules::getModule($request["module_id"]);
 
 // Hacky patch. Longer term plan, see: https://github.com/formtools/core/issues/82
-if (Core::$user->getLang() !== "en_us") {
+//if (Core::$user->getLang() !== "en_us") {
+if (Core::$user->getLang() !== "pt_br") {    
     $module = Modules::getModuleInstance($module_info["module_folder"]);
     $module_info["module_name"] = $module->getModuleName();
     $module_info["description"] = $module->getModuleDesc();
